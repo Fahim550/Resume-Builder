@@ -1,0 +1,165 @@
+.container{
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    border-bottom: 1px solid rgb(0, 0, 0,0.1);
+}
+.header::-webkit-scrollbar {
+  height: 7px;
+}
+
+.header::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: #c7c7c7;
+}
+
+.header .section{
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.header .active {
+    border-bottom: 2px solid #239ce2;
+    color: #239ce2;
+  }
+  .body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .detail .row{
+    display: flex;
+    gap: 20px;
+  }
+  .detail .colum{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .detail .row >div{
+    flex: 1;
+  }
+  .chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 1px 8px;
+    background-color: #239ce2;
+    border-radius: 20px;
+    height: 30px;
+    gap: 20px;
+  }
+  .chips .new {
+    color: #239ce2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: .5rem;
+  }
+  .chip p{
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #fff;
+  }
+  .chip svg{
+    height: 1.8rem;
+    width: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .body button{
+    width: fit-content;
+    padding:8px 16px;
+    color: rgb(251, 251, 251);
+    background-color:#1984c2;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  .body button:active{
+    transform:translateY(2px);
+  }
+  @media(max-width:660px){
+    .container{
+      width: 92%;
+    }
+    
+    .header .section{
+      padding: 5px;
+  }
+  .body{
+    padding: 10px;
+  }
+    .detail .row{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    html{
+      font-size: 65%;
+    }
+    .chip{
+      display: flex;
+      gap: 5px;
+      padding: 1px 4px;
+      border-radius: 20px;
+      height: 20px;
+    }
+  }
+  @media(max-width:768px){
+    .container{
+      width: 95%;
+    }
+    
+    .header .section{
+      padding: 5px;
+  }
+  .body{
+    padding: 10px;
+  }
+    .detail .row{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    html{
+      font-size: 65%;
+    }
+    .chip{
+      display: flex;
+      gap: 5px;
+      padding: 1px 4px;
+      border-radius: 20px;
+      height: 20px;
+    }
+  }
