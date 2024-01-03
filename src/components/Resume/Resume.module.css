@@ -64,6 +64,11 @@
   height: 1rem;
   width: 1rem;
 }
+.header .githubLink svg {
+  color: var(--color);
+  height: 1rem;
+  width: 1rem;
+}
 .main {
   display: flex;
   gap: 30px;

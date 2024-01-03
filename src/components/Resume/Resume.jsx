@@ -128,7 +128,7 @@ const Resume = React.forwardRef((Props, ref) => {
                 <span />
               )}
               {item.githubLink ? (
-                <a className={item.githubLink} href={item.githubLink}>
+                <a className={style.link} href={item.githubLink}>
                   <GitHub />
                   {item.githubLink}
                 </a>
