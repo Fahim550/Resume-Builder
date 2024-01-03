@@ -24,7 +24,7 @@
     gap: 20px;
     padding: 0 30px;
 }
-.colors .color{
+.colors span{
     height: 3.6rem;
     width: 3.6rem;
     border-radius: 50%;
@@ -49,8 +49,8 @@
     cursor: pointer;
 }
 .button svg{
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 1rem;
 }
 .main{
     display: flex;
@@ -60,27 +60,30 @@
     /* width: fit-content; */
 }
 @media(max-width:660px){
-    .colors .color{
-        height: 2rem;
-        width: 2rem;
+    .colors{
+        display: flex;
+        gap: 5px;
+        /* padding: 0 30px; */
+    }
+    .colors .active{
+        height: 10px;
+        width: 10px;
         border-radius: 50%;
         background-color:#239ce2;
     }
+    .toolbar{
+        gap: 10px;
+        width: 92%;
+    }
     .button{
         padding:4px 8px;
-        color: rgb(251, 251, 251);
-        background-color:#1984c2;
         border-radius: 10px;
-        border: none;
-        outline: none;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: .7rem;
         letter-spacing: 1px;
         display: flex;
         gap: 5px;
-        align-items: center;
-        cursor: pointer;
     }
+    
 }
 @media(max-width:768px){
     .colors .color{
